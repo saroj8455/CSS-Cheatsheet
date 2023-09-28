@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #eaeff1;
+}
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ul li {
+    list-style: none;
+}
+p {
+    font-size: 1rem;
+    color: #7f8c9b;
+    line-height: 1.7;
+}
+
+button {
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+/*    button is inline-block element by default ,
+it need to hava a block display for margin: 0 auto; to work */
+    display: block;
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+
+#container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #bacdd8;
+    padding: 0.8rem;
+}
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #788697;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.card__details {
+    padding: 1rem 0.5rem;
+}
+
