@@ -5,19 +5,31 @@
     box-sizing: border-box;
 }
 
+html {
+    color-scheme: light dark;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.6;
-    background-color: #eaeff1;
+    /*background-color: #eaeff1;*/
+}
+main {
+    width: min(65ch,100% - 4rem);
+    /* margin: 0 auto; work*/
+    margin-inline: auto;
 }
 a {
     text-decoration: none;
     color: #ccc;
 }
-img {
-    width: 100%;
-    object-fit: cover;
+/* Most of the css properties very common to every project*/
+
+img,picture,svg {
+    max-width: 100%;
+    display: block;
+    /*object-fit: cover;*/
 }
 
 ul li {
@@ -74,4 +86,9 @@ it need to hava a block display for margin: 0 auto; to work */
 .card__details {
     padding: 1rem 0.5rem;
 }
-
+.card__text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
