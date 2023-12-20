@@ -223,3 +223,7 @@ img {
   mix-blend-mode: color-burn;
 }
 ```
+
+##### Output :
+
+![Alt text](image.png)
