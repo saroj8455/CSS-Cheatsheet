@@ -1,8 +1,8 @@
 # css-cheatsheet
+
 A complete CSS cheat sheet for developers.
 
-
-### Selector: 
+### Selector:
 
 ```css
 /* Element Selector */
@@ -21,7 +21,7 @@ p {
 }
 
 /* Attribute Selector */
-input[type="text"] {
+input[type='text'] {
   /* Styles */
 }
 
@@ -34,10 +34,10 @@ div p {
 a:hover {
   /* Styles */
 }
-
 ```
 
 ### Typography:
+
 ```css
 /* Font Family */
 .element {
@@ -63,8 +63,8 @@ a:hover {
 .element {
   text-align: center;
 }
-
 ```
+
 ### Display and Positioning:
 
 ```css
@@ -90,7 +90,6 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 ```
 
 ### Background and Borders:
@@ -115,7 +114,6 @@ a:hover {
 .element {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 ```
 
 ### Animations and Transitions:
@@ -139,6 +137,32 @@ a:hover {
 .element {
   animation: slide 2s infinite alternate;
 }
-
 ```
 
+### CSS Rest and Basic Rules
+
+```css
+/* This rule resets the margin and padding of all elements on the page to 0. It also sets the `box-sizing` property to `border-box`, which means that the width and height of an element will include its border.  */
+/* Resetting Margins and Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This rule sets the default text color for the page to a dark gray color. It also sets the `--primary-text-color` variable to a blue color. This variable can be used to change the color of text throughout the page. */
+:root {
+  --text-color: #37415a;
+  --primary-text-color: #0b49e7;
+}
+
+/* Setting the Default Font Family and Font Size */
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-text-color);
+}
+```
