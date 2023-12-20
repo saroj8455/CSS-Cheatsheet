@@ -10,6 +10,7 @@
 :root {
   --text-color: #37415a;
   --primary-text-color: #0b49e7;
+  --bg-primary: #dfdfdf;
 }
 
 /* Setting the Default Font Family and Font Size */
@@ -20,4 +21,41 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--primary-text-color);
+}
+
+/* Create a container  margin-inline: auto; define same margin both left and right */
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+/* Reset default rule of image */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.image-container {
+  background-color: var(--bg-primary);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.photos img {
+  width: 15%;
+  /* Make the images same size */
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  /* Reset the white background */
+  mix-blend-mode: color-burn;
 }

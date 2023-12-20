@@ -166,3 +166,60 @@ body {
   color: var(--primary-text-color);
 }
 ```
+
+### css tips for working inconstinstenently sized logos
+
+If you have a logo that is not a consistent size across different devices or screen sizes, it can be tricky to make sure it scales properly without <br>
+
+```html
+<section>
+  <div class="container">
+    <div class="photos">
+      <img src="./assets/adidas.png" alt="adidas" srcset="" />
+      <img src="./assets/nba.png" alt="nba" srcset="" />
+      <img src="./assets/nike.png" alt="nike" srcset="" />
+      <img src="./assets/puma.png" alt="puma" srcset="" />
+      <img src="./assets/rebook.png" alt="rebook" srcset="" />
+    </div>
+  </div>
+</section>
+```
+
+```css
+/* Create a container  margin-inline: auto; define same margin both left and right */
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+/* Reset default rule of image */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.image-container {
+  background-color: var(--bg-primary);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.photos img {
+  width: 15%;
+  /* Make the images same size */
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  /* Reset the white background */
+  mix-blend-mode: color-burn;
+}
+```
