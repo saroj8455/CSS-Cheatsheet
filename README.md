@@ -1,8 +1,8 @@
 # css-cheatsheet
-A complete CSS cheatsheet for developer.
+A complete CSS cheat sheet for developers.
 
 
-### Selector 
+### Selector: 
 
 ```css
 /* Element Selector */
@@ -33,6 +33,35 @@ div p {
 /* Pseudo-class Selector */
 a:hover {
   /* Styles */
+}
+
+```
+
+### Typography:
+```css
+/* Font Family */
+.element {
+  font-family: Arial, sans-serif;
+}
+
+/* Font Size */
+.element {
+  font-size: 16px;
+}
+
+/* Font Weight */
+.element {
+  font-weight: bold;
+}
+
+/* Text Color */
+.element {
+  color: #333;
+}
+
+/* Text Alignment */
+.element {
+  text-align: center;
 }
 
 ```
