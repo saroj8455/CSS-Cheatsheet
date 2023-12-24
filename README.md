@@ -2,6 +2,9 @@
 
 A complete CSS cheat sheet for developers.
 
+## Browse to find the images that fit your needs and click to download. Use the on-the-fly color image generation to match your brand identity.
+`https://undraw.co/illustrations`
+
 ### Selector:
 
 ```css
@@ -167,7 +170,7 @@ body {
 }
 ```
 
-### css tips for working inconstinstenently sized logos
+### CSS tips for working inconstinstenently sized logos
 
 If you have a logo that is not a consistent size across different devices or screen sizes, it can be tricky to make sure it scales properly without <br>
 
