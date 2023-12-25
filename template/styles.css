@@ -1,0 +1,70 @@
+/* This rule resets the margin and padding of all elements on the page to 0. It also sets the `box-sizing` property to `border-box`, which means that the width and height of an element will include its border.  */
+/* Resetting Margins and Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This rule sets the default text color for the page to a dark gray color. It also sets the `--primary-text-color` variable to a blue color. This variable can be used to change the color of text throughout the page. */
+:root {
+  --text-color: #37415a;
+  --primary-text-color: #0b49e7;
+  --bg-primary: #dfdfdf;
+}
+
+/* Setting the Default Font Family and Font Size */
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  /* color: var(--primary-text-color); */
+}
+
+/* Create a container  margin-inline: auto; define same margin both left and right */
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+/* Reset default rule of image */
+/* Codepen link : https://codepen.io/Vupez/pen/WMBxmY */
+img {
+  max-width: 100%;
+  height: auto;
+  /* display: block; */
+  vertical-align: middle;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+/* Muted paragraph */
+.muted {
+  font-style: italic;
+  color: #666;
+}
+
+/* Approach I */
+.pics_row {
+  margin: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 4;
+}
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pics_row .image-wrapper img {
+  max-width: 30%;
+  /* height: 100%; */
+  /* aspect-ratio: 16/9; */
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
