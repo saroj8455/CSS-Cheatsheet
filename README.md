@@ -3,7 +3,9 @@
 A complete CSS cheat sheet for developers.
 
 ## Browse to find the images that fit your needs and click to download. Use the on-the-fly color image generation to match your brand identity.
+
 `https://undraw.co/illustrations`
+`https://www.manypixels.co/gallery`
 
 ### Selector:
 
