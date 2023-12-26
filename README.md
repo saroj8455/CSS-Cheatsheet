@@ -232,3 +232,6 @@ img {
 ##### Output :
 
 ![Alt text](image.png)
+
+
+### Avoid media query
