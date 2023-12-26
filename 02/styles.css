@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  line-height: 1.6;
+}
+
+/* Global Image Reset */
+img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+
+}
+
+.hero {
+  /* width: clamp(20%,50%,80%); */
+  background-color:aliceblue;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.hero img {
+  width: 50%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
