@@ -233,12 +233,9 @@ img {
 
 ![Alt text](image.png)
 
-
 ### Avoid media query
 
-
 `https://undraw.co/illustrations` <br>
-
 
 ```css
 // simple reset
@@ -282,7 +279,7 @@ body {
   --clr-neutral-200: 210 46% 95%;
   --clr-neutral-300: 0 0% 81%;
 
-  --ff-primary: "Barlow Semi Condensed", sans-serif;
+  --ff-primary: 'Barlow Semi Condensed', sans-serif;
 
   --fw-400: 500;
   --fw-700: 600;
@@ -304,8 +301,8 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 /* Set core root defaults */
@@ -338,20 +335,17 @@ select {
 }
 ```
 
-### Free  resource repo
+### Free resource repo
+
 `https://box-shadow.dev/` <br>
 `https://github.com/bradtraversy/design-resources-for-developers.git` <br>
 `https://github.com/bradtraversy/traversy-js-challenges` <br>
-
 
 ### Remove default margin for html element <Kevin Powell>
 
 `https://github.com/kevin-powell/learn-grid-the-easy-way/blob/main/style.css` <br>
 
 ```css
-
-
-
 /* Remove default margin */
 body,
 h1,
@@ -365,19 +359,17 @@ dl,
 dd {
   margin: 0;
 }
-
-
 ```
 
 ### VerifyToken
 
 ```js
-const jwt = require('jsonwebtoken')
-const asyncHandler = require('express-async-handler')
-const User = require('../models/userModel')
+const jwt = require('jsonwebtoken');
+const asyncHandler = require('express-async-handler');
+const User = require('../models/userModel');
 
 const protect = asyncHandler(async (req, res, next) => {
-  let token
+  let token;
 
   if (
     req.headers.authorization &&
@@ -385,31 +377,30 @@ const protect = asyncHandler(async (req, res, next) => {
   ) {
     try {
       // Get token from header
-      token = req.headers.authorization.split(' ')[1]
+      token = req.headers.authorization.split(' ')[1];
 
       // Verify token
-      const decoded = jwt.verify(token, process.env.JWT_SECRET)
+      const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
       // Get user from the token
-      req.user = await User.findById(decoded.id).select('-password')
+      req.user = await User.findById(decoded.id).select('-password');
 
-      next()
+      next();
     } catch (error) {
-      console.log(error)
-      res.status(401)
-      throw new Error('Not authorized')
+      console.log(error);
+      res.status(401);
+      throw new Error('Not authorized');
     }
   }
 
   if (!token) {
-    res.status(401)
-    throw new Error('Not authorized, no token')
+    res.status(401);
+    throw new Error('Not authorized, no token');
   }
-})
+});
 
-module.exports = { protect }
+module.exports = { protect };
 ```
-
 
 ### Common CSS Style author : Brad Traversy
 
@@ -630,3 +621,7 @@ h3 {
   }
 }
 ```
+
+### CSS Must know property @author Lukas | Web Devlopment and Design
+
+`https://getcssscan.com/css-box-shadow-examples` <br>
